@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header / Navigation -->
     <header>
-        <h1>Willkommen zu meinem Portfolio</h1>
+        <div class="logo">Mein Portfolio</div>
         <nav>
             <a href="#about">Über mich</a>
             <a href="#projects">Projekte</a>
@@ -16,27 +17,30 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>Über mich</h2>
-        <p>Hier kannst du einen kurzen Text über dich schreiben: Wer du bist, was du machst und deine Skills.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Meine Projekte</h2>
-        <div class="project">
-            <img src="images/beispiel.jpg" alt="Projektbild">
-            <h3>Projektname</h3>
-            <p>Kurze Beschreibung des Projekts.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hallo, ich bin <span>Dein Name</span></h1>
+            <p>Webdesigner & Entwickler mit Leidenschaft für moderne Designs.</p>
+            <a href="#projects" class="btn">Meine Projekte</a>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Email: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
+    <!-- Über mich -->
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>
+            Ich bin ein kreativer Webentwickler mit Fokus auf benutzerfreundliche,
+            moderne Designs. Hier kannst du ein paar Zeilen zu dir, deinen Skills
+            und deiner Motivation schreiben.
+        </p>
     </section>
 
-    <footer>
-        <p>© 2025 Dein Name</p>
-    </footer>
-</body>
-</html>
+    <!-- Projekte -->
+    <section id="projects">
+        <h2>Meine Projekte</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/projekt1.jpg" alt="Projekt 1">
+                <h3>Projektname 1</h3>
+                <p>Kurzbeschreibung des Projekts.</p>
