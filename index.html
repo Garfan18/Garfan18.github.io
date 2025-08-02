@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
+    <title>Game Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header / Navigation -->
     <header>
-        <div class="logo">Mein Portfolio</div>
+        <div class="logo">ANNA SALADIN</div>
         <nav>
-            <a href="#about">Über mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-text">
-            <h1>Hallo, ich bin <span>Dein Name</span></h1>
-            <p>Webdesigner & Entwickler mit Leidenschaft für moderne Designs.</p>
-            <a href="#projects" class="btn">Meine Projekte</a>
+        <h1>My name is Anna Saladin</h1>
+        <p>Welcome to my portfolio. You will find a wide variety of projects I have worked on in recent years. They
+            demonstrate my experience in a variety of different fields, which has made me a generalist.</p>
+    </section>
+
+    <section class="filter-bar">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="2D">2D</button>
+        <button class="filter-btn" data-filter="3D">3D</button>
+        <button class="filter-btn" data-filter="PixelArt">Pixel Art</button>
+        <button class="filter-btn" data-filter="LevelDesign">Level Design</button>
+    </section>
+
+    <section class="projects">
+        <div class="project-card" data-category="2D PixelArt">
+            <img src="images/project1/kXQETg.jpg" alt="Meow or Never">
+            <h3>Meow or Never</h3>
+            <p>2D Pixel Art Puzzle Game</p>
+            <a href="project1.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="3D LevelDesign">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>Sci-Fi Shooter Level</h3>
+            <p>3D Sci-Fi Level Design</p>
+            <a href="project2.html">View Project</a>
         </div>
     </section>
 
-    <!-- Über mich -->
-    <section id="about">
-        <h2>Über mich</h2>
-        <p>
-            Ich bin ein kreativer Webentwickler mit Fokus auf benutzerfreundliche,
-            moderne Designs. Hier kannst du ein paar Zeilen zu dir, deinen Skills
-            und deiner Motivation schreiben.
-        </p>
-    </section>
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projects = document.querySelectorAll(".project-card");
 
-    <!-- Projekte -->
-    <section id="projects">
-        <h2>Meine Projekte</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="images/projekt1.jpg" alt="Projekt 1">
-                <h3>Projektname 1</h3>
-                <p>Kurzbeschreibung des Projekts.</p>
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.dataset.filter;
+
+                projects.forEach(project => {
+                    if (category === "all" || project.dataset.category.includes(category)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <footer>
+        <p>© 2025 Anna Saladin – Game Design Portfolio</p>
+    </footer>
+</body>
+
+</html>

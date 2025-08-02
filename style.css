@@ -1,86 +1,70 @@
-/* Grundstyles */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #2F4F4F;
+    color: #e5e5e5;
 }
 
 /* Navigation */
 header {
-    background: white;
+    background: #15171e;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
 }
 
-header .logo {
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 1.2rem;
+    color: #00ff88;
 }
 
-header nav a {
-    margin-left: 1.5rem;
+nav a {
+    color: #e5e5e5;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    margin-left: 1.5rem;
+    font-size: 1rem;
 }
 
-header nav a:hover {
-    color: #0077cc;
+nav a:hover {
+    color: #00ff88;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #0077cc, #00b4d8);
-    color: white;
+    text-align: center;
     padding: 5rem 5%;
-    text-align: center;
+    background: linear-gradient(145deg, #15171e, #0f1116);
 }
 
-.hero h1 span {
-    color: #ffd166;
+.hero h1 {
+    font-size: 2.5rem;
 }
 
-.hero .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    background: white;
-    color: #0077cc;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 1rem auto;
 }
 
-/* Sektionen */
-section {
-    padding: 3rem 5%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-/* Projekte Grid */
-.project-grid {
+/* Projektübersicht */
+.projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 1.5rem;
+    padding: 2rem 5%;
 }
 
 .project-card {
-    background: white;
+    background: #1a1c23;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease;
 }
 
@@ -95,16 +79,109 @@ h2 {
 }
 
 .project-card h3 {
-    margin: 0.8rem;
+    margin: 1rem;
+    font-size: 1.2rem;
 }
 
 .project-card p {
-    margin: 0 0.8rem 1rem;
-    font-size: 0.9rem;
-    color: #555;
+    margin: 0 1rem 1rem;
+    color: #aaa;
 }
 
-/* Kontakt */
-#contact {
-    text-align: center
+.project-card a {
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #00ff88;
+    color: #0f1116;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background: #00cc6a;
+}
+
+/* --- Project Details Page Styles --- */
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 5%;
+}
+
+.project-image {
+    flex: 1 1 350px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    flex: 2 1 400px;
+}
+
+.project-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-info li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.project-info strong {
+    color: #00ff88;
+}
+
+/* --- Filter Buttons --- */
+.filter-bar {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.filter-btn {
+    background: #1a1c23;
+    color: #e5e5e5;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-btn:hover {
+    background: #00ff88;
+    color: #0f1116;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #00ff88;
+    color: #0f1116;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00cc6a;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #15171e;
+    color: #777;
+    margin-top: 2rem;
 }
