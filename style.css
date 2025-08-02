@@ -55,7 +55,7 @@ nav a:hover {
 /* Projektübersicht */
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     padding: 2rem 5%;
 }
@@ -139,6 +139,63 @@ nav a:hover {
 .project-info strong {
     color: #00ff88;
 }
+
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 5%;
+}
+
+.project-image {
+    flex: 1 1 350px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    flex: 2 1 400px;
+}
+
+.project-info h2,
+.project-info h3 {
+    margin-top: 1rem;
+    color: #00ff88;
+}
+
+.project-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-info li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.project-info strong {
+    color: #00ff88;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #00ff88;
+    color: #0f1116;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.btn:hover {
+    background: #00cc6a;
+}
+
 
 /* --- Filter Buttons --- */
 .filter-bar {
