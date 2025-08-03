@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ANNA SALADIN</div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>My Gameprojects</h1>
+        <p>[Some informations]</p>
+    </section>
+
+    <section class="filter-bar">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="2D">2D</button>
+        <button class="filter-btn" data-filter="3D">3D</button>
+        <button class="filter-btn" data-filter="Game">Game</button>
+        <button class="filter-btn" data-filter="Website">Website</button>
+    </section>
+
+
+    <section class="projects">
+
+        <div class="project-card" data-category="-">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>V-Tuber</h3>
+            <p>[Short project tagline or genre here, e.g. "2D Pixel Art Puzzle Game"]</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="-">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>Stillleben der Moderne</h3>
+            <p>[Short project tagline or genre here, e.g. "2D Pixel Art Puzzle Game"]</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="-">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>Cosplay</h3>
+            <p>[Short project tagline or genre here, e.g. "2D Pixel Art Puzzle Game"]</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="-">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>Physical Prototyping</h3>
+            <p>[Short project tagline or genre here, e.g. "2D Pixel Art Puzzle Game"]</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="-">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>Starting Concept Art</h3>
+            <p>[Short project tagline or genre here, e.g. "2D Pixel Art Puzzle Game"]</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="-">
+            <img src="images/project2.jpg" alt="Sci-Fi Shooter Level">
+            <h3>3D Modelling</h3>
+            <p>[Short project tagline or genre here, e.g. "2D Pixel Art Puzzle Game"]</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+    </section>
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projects = document.querySelectorAll(".project-card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.dataset.filter;
+
+                projects.forEach(project => {
+                    if (category === "all" || project.dataset.category.includes(category)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <footer>
+        <p>© 2025 Anna Saladin – Game Design Portfolio</p>
+    </footer>
+</body>
+
+</html>

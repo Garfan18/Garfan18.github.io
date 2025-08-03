@@ -242,3 +242,79 @@ footer {
     color: #777;
     margin-top: 2rem;
 }
+
+/* Category Cards Section */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+.category-card:hover img {
+    filter: brightness(50%);
+}
+
+.category-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-overlay h2 {
+    color: #00ff88;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* return button */
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 3rem auto 1rem;
+    padding: 0 1rem;
+}
+
+.nav-btn {
+    background: #1a1c23;
+    color: #e5e5e5;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background: #00ff88;
+    color: #0f1116;
+}
+

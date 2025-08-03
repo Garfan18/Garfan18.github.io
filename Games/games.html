@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ANNA SALADIN</div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>My Gameprojects</h1>
+        <p>[Some informations]</p>
+    </section>
+
+    <section class="filter-bar">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="2D">2D</button>
+        <button class="filter-btn" data-filter="3D">3D</button>
+        <button class="filter-btn" data-filter="AR">AR</button>
+        <button class="filter-btn" data-filter="Text">Text</button>
+        <button class="filter-btn" data-filter="Comic">Comic</button>
+    </section>
+
+
+    <section class="projects">
+        <!-- Games -->
+        <div class="project-card" data-category="Text">
+            <img src="images/Project1/Zeitschleife 01.JPG" alt="Sci-Fi Shooter Level">
+            <h3>Zeitschleife</h3>
+            <p>First C# project</p>
+            <a href="project1.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="3D">
+            <img src="images/project2/Super Mario 01.JPG" alt="Sci-Fi Shooter Level">
+            <h3>Jump'n'run</h3>
+            <p>First Unity project</p>
+            <a href="project2.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="3D">
+            <img src="images/Project3/Paradies 01.JPG" alt="Sci-Fi Shooter Level">
+            <h3>Universal Paradises</h3>
+            <p>Creative vocational baccalaureate diploma thesis</p>
+            <a href="project3.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="2D">
+            <img src="images/Project4/kXQETg.jpg" alt="Meow or Never">
+            <h3>Meow or Never</h3>
+            <p>2D Pixelart Puzzle-Game</p>
+            <a href="project4.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="3D">
+            <img src="images/project5/located-target.png" alt="Purrfect Kill">
+            <h3>Purrfect Kill</h3>
+            <p>3D Puzzle-Game</p>
+            <a href="project5.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="Comic">
+            <img src="images/Project6/Saladin_Ineichen_2023_STORY_Comic_01.png" alt="Sci-Fi Shooter Level">
+            <h3>Eduardo</h3>
+            <p>Interactive Comic</p>
+            <a href="project6.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="AR 3D">
+            <img src="images/Project7/01_Intro_HorrAR_ASaladin_LCozzio.png" alt="HorrAR">
+            <h3>HorrAR</h3>
+            <p>AR hide and seek game</p>
+            <a href="project7.html">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="2D">
+            <img src="images/Project8/A68RaG.png" alt="Sci-Fi Shooter Level">
+            <h3>You are not the Hero</h3>
+            <p>2D Puzzle-Game</p>
+            <a href="project8.html">View Project</a>
+        </div>
+
+    </section>
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projects = document.querySelectorAll(".project-card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.dataset.filter;
+
+                projects.forEach(project => {
+                    if (category === "all" || project.dataset.category.includes(category)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <footer>
+        <p>© 2025 Anna Saladin – Game Design Portfolio</p>
+    </footer>
+</body>
+
+</html>
