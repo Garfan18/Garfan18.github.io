@@ -195,7 +195,7 @@ footer {
 /* Category Cards Section */
 .categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: auto 50%;
     gap: 2rem;
     padding: 3rem 5%;
 }
@@ -206,7 +206,6 @@ footer {
     border-radius: 10px;
     text-decoration: none;
     display: block;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
 
@@ -216,10 +215,11 @@ footer {
 
 .category-card img {
     width: 100%;
-    height: 220px;
+    height: 300px;
     object-fit: cover;
     filter: brightness(70%);
     transition: filter 0.3s ease;
+    Border-radius: 10px;
 }
 
 .category-card:hover img {
@@ -363,12 +363,6 @@ footer {
   background: #00cc6a;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .about-cv {
-    flex-direction: column;
-  }
-}
 
 /* Timeline Layout */
 .timeline {
@@ -397,7 +391,7 @@ footer {
 /* --- Projekt Galerie Grid --- */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: auto auto;
   gap: 1rem;
   width: 100%;
 }
@@ -453,3 +447,157 @@ footer {
   font-weight: bold;
 }
 
+
+
+/* --------- Tablet (<= 1024px) --------- */
+@media (max-width: 1024px) {
+  .hero { padding: 4rem 5%; }
+  .hero h1 { font-size: 2.1rem; }
+
+  .projects { grid-template-columns: repeat(2, 1fr); }
+
+  /* Kategorien: von "auto 50%" auf 2 Spalten */
+  .categories { grid-template-columns: repeat(2, 1fr); }
+
+  /* Galerie: 2 Spalten */
+  .project-gallery { grid-template-columns: repeat(2, 1fr); }
+
+  .project-details { max-width: 900px; }
+}
+
+/* --------- Mobile (<= 768px) --------- */
+@media (max-width: 768px) {
+  /* Header & Navigation */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+  /* einfache Flex-Navi ohne Burger */
+  nav { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: .75rem 1rem; 
+    justify-content: center; 
+  }
+  nav a { margin-left: 0; }
+
+  /* Hero kompakter */
+  .hero { padding: 3rem 5%; }
+  .hero p { font-size: 1rem; }
+
+  /* Projektübersicht: 1 Spalte */
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 5%;
+  }
+
+  /* Projekt-Details untereinander */
+  .project-details { 
+    flex-direction: column; 
+    gap: 1.25rem;
+  }
+  .project-info { 
+    flex: 1 1 auto; /* verhindert starres Breitenverhalten */
+  }
+
+  /* Karten & Bilder etwas kleiner */
+  .project-card img { height: 160px; }
+  .category-card img { height: 220px; }
+
+  /* Kategorien: 1 Spalte */
+  .categories { grid-template-columns: 1fr; }
+
+  /* Galerie: 2 Spalten */
+  .project-gallery { grid-template-columns: 1fr 1fr; }
+
+  /* Timeline: Datum über Text */
+  .timeline-row { 
+    grid-template-columns: 1fr; 
+  }
+  .timeline-date { margin-bottom: .25rem; }
+
+  /* Buttons auf volle Breite, besser tappbar */
+  .btn { 
+    width: 75%; 
+    text-align: center; 
+    margin-right: 0; 
+    margin-bottom: .5rem; 
+  }
+
+  /* Navigation unten stapeln */
+  .project-navigation {
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .nav-btn { width: 100%; }
+}
+
+/* --------- Kleine Phones (<= 480px) --------- */
+@media (max-width: 480px) {
+  header { padding: .75rem 5%; }
+  .logo { font-size: 1.25rem; }
+
+  .hero h1 { font-size: 1.6rem; }
+
+  .project-card h3 { font-size: 1.05rem; }
+
+  /* Galerie: 1 Spalte */
+  .project-gallery { grid-template-columns: 1fr; }
+
+  .category-card img { height: 180px; }
+
+  .project-navigation { 
+    margin: 2rem auto 1rem; 
+    padding: 0 5%; 
+  }
+
+  /* Lightbox bequemer auf kleinen Screens */
+  .lightbox-overlay { padding: 1rem; }
+  .lightbox-close { top: .5rem; right: .5rem; }
+}
+
+/* ---------- project-image Responsive ---------- */
+
+/* Tablet (<= 1024px): früher umbrechen, nicht zu hoch werden */
+@media (max-width: 1024px) {
+  .project-image {
+    flex: 1 1 100%;
+    max-height: 520px; /* verhindert überhohe Bilder im 2-Spalten-Layout */
+  }
+}
+
+/* Mobile (<= 768px): volle Breite, sanftere Ecken */
+@media (max-width: 768px) {
+  .project-image {
+    width: 100%;
+    height: auto;      /* natürliche Höhe */
+    border-radius: 8px;
+  }
+
+  /* Variante mit Beschnitt (Hero-Style) */
+  .project-image.cover {
+    aspect-ratio: 16 / 9;   /* gewünschtes Seitenverhältnis */
+    height: auto;           /* Höhe ergibt sich aus aspect-ratio */
+    object-fit: cover;      /* füllt den Rahmen, croppt falls nötig */
+    max-height: clamp(220px, 45vh, 420px);
+  }
+
+  /* Variante ohne Beschnitt (ganzes Bild sichtbar, ggf. Letterboxing) */
+  .project-image.contain {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: contain;
+    background: #0f1116;    /* dunkler Briefkasten-Hintergrund */
+  }
+}
+
+/* Kleine Phones (<= 480px): noch kompakter */
+@media (max-width: 480px) {
+  .project-image { border-radius: 6px; }
+
+  .project-image.cover {
+    aspect-ratio: 16 / 9;
+    max-height: clamp(200px, 45vh, 360px);
+  }
+}
