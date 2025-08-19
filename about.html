@@ -1,120 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me – Game Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">My Game Portfolio</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About Me</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header>
+    <div class="logo">My Game Portfolio</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section class="about-cv">
-        <!-- Left side: Profile -->
-        <div class="about-left">
-            <img src="images/AnnaSaladin_Portrai.jpg" alt="Profile Picture" class="about-photo">
-            <h1>Anna Maria Saladin</h1>
-            <p class="about-sub">Game Designer & VR Developer</p>
+<section class="hero">
+    <h1>About Me</h1>
+    <p>Learn more about who I am, my journey in game design, and my creative process.</p>
+</section>
 
-            <h2>Contact</h2>
-            <ul class="about-list">
-                <li><strong>Phone:</strong> <a href="tel:+41774963041">+41 77 496 30 41</a></li>
-                <li><strong>Email:</strong> <a href="mailto:saladin.anna@gmail.com">saladin.anna@gmail.com</a></li>
-                <li><strong>Location:</strong> Reinach BL, Switzerland</li>
-                <li><strong>Born:</strong> 18.05.1999</li>
-            </ul>
+<section style="padding: 2rem 5%; max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; gap: 2rem;">
+    <!-- Profile Image -->
+    <div style="flex: 1 1 250px; min-width: 250px;">
+        <img src="images/AnnaSaladin_Portrai.jpg" alt="Profile Picture" style="width:100%; border-radius:10px;">
+    </div>
 
-            <h2>Skills</h2>
-            <ul class="about-list">
-                <li>Level Design</li>
-                <li>3D Modeling</li>
-                <li>UI/UX Design</li>
-                <li>Pixel Art</li>
-                <li>Narrative Design</li>
-            </ul>
+    <!-- About Text -->
+    <div style="flex: 2 1 300px;">
+        <h2>Hello, I’m [Your Name]</h2>
+        <p>
+            I am a passionate game designer with a love for creating immersive worlds, compelling gameplay,
+            and memorable player experiences. My expertise ranges from level design and storytelling
+            to 3D modeling and interactive UI development.
+        </p>
+        <p>
+            Over the years, I have worked on various personal and collaborative projects that explore
+            different genres and art styles, from atmospheric sci-fi shooters to vibrant pixel adventures.
+        </p>
 
-            <h2>Languages</h2>
-            <ul class="about-list">
-                <li>German (native)</li>
-                <li>English (C1)</li>
-            </ul>
-        </div>
+        <h3>Skills & Tools</h3>
+        <ul>
+            <li>Level Design (Unity, Unreal Engine)</li>
+            <li>3D Modeling (Blender, Maya)</li>
+            <li>Game UI/UX Design</li>
+            <li>Pixel Art & 2D Illustration</li>
+            <li>Storytelling & Narrative Design</li>
+        </ul>
 
-        <!-- Right side: CV details -->
-        <div class="about-right">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-row">
-                    <div class="timeline-date">2025 – Today</div>
-                    <div class="timeline-info">VR C# Software Developer · sefit health GmbH</div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-date">2022 – 2025</div>
-                    <div class="timeline-info">Bachelor Digital Ideation · HSLU</div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-date">2021 – 2022</div>
-                    <div class="timeline-info">Vocational Baccalaureate Design · Basel</div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-date">2020 – 2022</div>
-                    <div class="timeline-info">Private Programming Lessons (Unity, C#)</div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-date">2016 – 2020</div>
-                    <div class="timeline-info">Apprenticeship Architectural Draughtswoman · Rapp Architekten AG</div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-date">2011 – 2016</div>
-                    <div class="timeline-info">Secondary School Aesch</div>
-                </div>
-            </div>
+        <h3>My Goal</h3>
+        <p>
+            My mission is to create engaging and visually stunning games that leave a lasting
+            impression on players. I’m always eager to learn new tools and collaborate
+            with other creative minds in the gaming industry.
+        </p>
+    </div>
+</section>
 
-            <h2>Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-row">
-                    <div class="timeline-date">2020 – 2021</div>
-                    <div class="timeline-info">Architectural Draughtswoman · Rapp Architekten AG</div>
-                    <div class="timeline-date"></div>
-                    <div class="timeline-info">- Created plans from 3D models<br>– Built 3D models in ArchiCAD</div>
-                </div>
-            </div>
-
-            <h2>Tools & Tech</h2>
-            <ul class="about-list">
-                <li>Unity, Unreal Engine, Blender, ArchiCAD</li>
-                <li>C#, HTML, CSS, JavaScript</li>
-                <li>Adobe Photoshop, Illustrator, InDesign, XD</li>
-                <li>Clip Studio Paint, Live2D, VTube Studio</li>
-            </ul>
-
-            <h2>Interests</h2>
-            <ul class="about-list">
-                <li>Fire Brigade (Corporal)</li>
-                <li>Escape Rooms</li>
-                <li>Streaming (Twitch)</li>
-                <li>E-Sports (R6 Siege)</li>
-            </ul>
-
-            <a href="CV_AnnaSaladin.pdf" target="_blank" class="btn">Download CV (PDF)</a>
-        </div>
-    </section>
-
-
-    <footer>
-        <p>© 2025 [Your Name] – Game Design Portfolio</p>
-    </footer>
+<footer>
+    <p>© 2025 [Your Name] – Game Design Portfolio</p>
+</footer>
 
 </body>
-
 </html>
