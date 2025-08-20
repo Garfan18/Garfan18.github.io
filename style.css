@@ -2,269 +2,272 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background-color: #2F4F4F;
-    color: #e5e5e5;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #2E3E34;
+  color: #F2F3EA;
 }
 
 /* Navigation */
 header {
-    background: #15171e;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #15171e;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #00ff88;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7A4976;
 }
 
 nav a {
-    color: #e5e5e5;
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 1rem;
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
 }
 
 nav a:hover {
-    color: #00ff88;
+  color: #7A4976;
 }
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 5rem 5%;
-    background: linear-gradient(145deg, #15171e, #0f1116);
+  text-align: center;
+  padding: 5rem 5%;
+  background: linear-gradient(145deg, #15171e, #0f1116);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #ccc;
-    max-width: 600px;
-    margin: 1rem auto;
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 1rem auto;
 }
 
 /* Projektübersicht */
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 2rem 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 5%;
 }
 
 .project-card {
-    background: #1a1c23;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
+  background: #1a1c23;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .project-card h3 {
-    margin: 1rem;
-    font-size: 1.2rem;
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 
 .project-card p {
-    margin: 0 1rem 1rem;
-    color: #aaa;
+  margin: 0 1rem 1rem;
+  color: #aaa;
 }
 
 .project-card a {
-    display: block;
-    margin: 1rem;
-    padding: 0.5rem;
-    background: #00ff88;
-    color: #0f1116;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem;
+  background: #7A4976;
+  color: #0f1116;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .project-card a:hover {
-    background: #00cc6a;
+  background: #955A91;
 }
 
 /* --- Project Details Page Styles --- */
 .project-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 5%;
 }
 
 .project-image {
-    flex: 1 1 350px;
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
+  flex: 1 1 350px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .project-info {
-    flex: 1400px;
+  flex: 1400px;
 }
 
 .project-info ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
 }
 
 .project-info li {
-    margin-bottom: 0.5rem;
-    color: #ccc;
+  margin-bottom: 0.5rem;
+  color: #ccc;
 }
 
 .project-info strong {
-    color: #00ff88;
+  color: #7A4976;
 }
 
 .project-info h2,
 .project-info h3 {
-    margin-top: 1rem;
-    color: #00ff88;
+  margin-top: 1rem;
+  color: #7A4976;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background: #00ff88;
-    color: #0f1116;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 0.5rem;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #7A4976;
+  color: #0f1116;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
 
 .btn:hover {
-    background: #00cc6a;
+  background: #00cc6a;
 }
 
 /* --- Filter Buttons --- */
 .filter-bar {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .filter-btn {
-    background: #1a1c23;
-    color: #e5e5e5;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 0.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+  background: #1a1c23;
+  color: #e5e5e5;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .filter-btn:hover {
-    background: #00ff88;
-    color: #0f1116;
+  background: #7A4976;
+  color: #0f1116;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: #15171e;
-    color: #777;
-    margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: #15171e;
+  color: #777;
+  margin-top: 2rem;
 }
 
 /* Category Cards Section */
 .categories {
-    display: grid;
-    grid-template-columns: auto 50%;
-    gap: 2rem;
-    padding: 3rem 5%;
+  display: grid;
+  grid-template-columns: auto 50%;
+  gap: 2rem;
+  padding: 3rem 5%;
 }
 
 .category-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    text-decoration: none;
-    display: block;
-    transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .category-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    filter: brightness(70%);
-    transition: filter 0.3s ease;
-    Border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+  Border-radius: 10px;
 }
 
 .category-card:hover img {
-    filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .category-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .category-overlay h2 {
-    color: #00ff88;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
+  color: #7A4976;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  background: #15171e;
+  padding: 10px;
+  Border-radius: 10px;
 }
 
 /* return button */
 .project-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1800px;
-    margin: 3rem auto 1rem;
-    padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  margin: 3rem auto 1rem;
+  padding: 0 1rem;
 }
 
 .nav-btn {
-    background: #1a1c23;
-    color: #e5e5e5;
-    text-decoration: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease;
-    text-align: center;
+  background: #1a1c23;
+  color: #e5e5e5;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-align: center;
 }
 
 .nav-btn:hover {
-    background: #00ff88;
-    color: #0f1116;
+  background: #7A4976;
+  color: #0f1116;
 }
 
 /* About / CV Layout */
@@ -314,7 +317,7 @@ footer {
 }
 
 .about-list a {
-  color: #00ff88;
+  color: #7A4976;
   text-decoration: none;
 }
 
@@ -337,7 +340,7 @@ footer {
 .about-timeline span {
   display: inline-block;
   min-width: 120px;
-  color: #00ff88;
+  color: #7A4976;
   font-weight: bold;
 }
 
@@ -351,7 +354,7 @@ footer {
 .about-right .btn {
   display: inline-block;
   margin-top: 1rem;
-  background: #00ff88;
+  background: #7A4976;
   color: #0f1116;
   padding: 0.7rem 1.5rem;
   border-radius: 5px;
@@ -360,7 +363,7 @@ footer {
 }
 
 .about-right .btn:hover {
-  background: #00cc6a;
+  background: #955A91;
 }
 
 
@@ -374,13 +377,14 @@ footer {
 
 .timeline-row {
   display: grid;
-  grid-template-columns: 180px 1fr; /* left column fixed, right flexible */
+  grid-template-columns: 180px 1fr;
+  /* left column fixed, right flexible */
   gap: 1rem;
   align-items: start;
 }
 
 .timeline-date {
-  color: #00ff88;
+  color: #7A4976;
   font-weight: bold;
 }
 
@@ -415,7 +419,7 @@ footer {
 .lightbox-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: none;
   align-items: center;
   justify-content: center;
@@ -440,7 +444,7 @@ footer {
   top: 1rem;
   right: 1rem;
   text-decoration: none;
-  background: #00ff88;
+  background: #7A4976;
   color: #0f1116;
   padding: .5rem .8rem;
   border-radius: 6px;
@@ -451,40 +455,63 @@ footer {
 
 /* --------- Tablet (<= 1024px) --------- */
 @media (max-width: 1024px) {
-  .hero { padding: 4rem 5%; }
-  .hero h1 { font-size: 2.1rem; }
+  .hero {
+    padding: 4rem 5%;
+  }
 
-  .projects { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* Kategorien: von "auto 50%" auf 2 Spalten */
-  .categories { grid-template-columns: repeat(2, 1fr); }
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* Galerie: 2 Spalten */
-  .project-gallery { grid-template-columns: repeat(2, 1fr); }
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  .project-details { max-width: 900px; }
+  .project-details {
+    max-width: 900px;
+  }
 }
 
 /* --------- Mobile (<= 768px) --------- */
 @media (max-width: 768px) {
+
   /* Header & Navigation */
   header {
     flex-direction: column;
     align-items: center;
     gap: .75rem;
   }
+
   /* einfache Flex-Navi ohne Burger */
-  nav { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: .75rem 1rem; 
-    justify-content: center; 
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem 1rem;
+    justify-content: center;
   }
-  nav a { margin-left: 0; }
+
+  nav a {
+    margin-left: 0;
+  }
 
   /* Hero kompakter */
-  .hero { padding: 3rem 5%; }
-  .hero p { font-size: 1rem; }
+  .hero {
+    padding: 3rem 5%;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 
   /* Projektübersicht: 1 Spalte */
   .projects {
@@ -493,36 +520,50 @@ footer {
   }
 
   /* Projekt-Details untereinander */
-  .project-details { 
-    flex-direction: column; 
+  .project-details {
+    flex-direction: column;
     gap: 1.25rem;
   }
-  .project-info { 
-    flex: 1 1 auto; /* verhindert starres Breitenverhalten */
+
+  .project-info {
+    flex: 1 1 auto;
+    /* verhindert starres Breitenverhalten */
   }
 
   /* Karten & Bilder etwas kleiner */
-  .project-card img { height: 160px; }
-  .category-card img { height: 220px; }
+  .project-card img {
+    height: 160px;
+  }
+
+  .category-card img {
+    height: 220px;
+  }
 
   /* Kategorien: 1 Spalte */
-  .categories { grid-template-columns: 1fr; }
+  .categories {
+    grid-template-columns: 1fr;
+  }
 
   /* Galerie: 2 Spalten */
-  .project-gallery { grid-template-columns: 1fr 1fr; }
+  .project-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 
   /* Timeline: Datum über Text */
-  .timeline-row { 
-    grid-template-columns: 1fr; 
+  .timeline-row {
+    grid-template-columns: 1fr;
   }
-  .timeline-date { margin-bottom: .25rem; }
+
+  .timeline-date {
+    margin-bottom: .25rem;
+  }
 
   /* Buttons auf volle Breite, besser tappbar */
-  .btn { 
-    width: 75%; 
-    text-align: center; 
-    margin-right: 0; 
-    margin-bottom: .5rem; 
+  .btn {
+    width: 75%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: .5rem;
   }
 
   /* Navigation unten stapeln */
@@ -530,31 +571,53 @@ footer {
     flex-direction: column;
     gap: .5rem;
   }
-  .nav-btn { width: 100%; }
+
+  .nav-btn {
+    width: 100%;
+  }
 }
 
 /* --------- Kleine Phones (<= 480px) --------- */
 @media (max-width: 480px) {
-  header { padding: .75rem 5%; }
-  .logo { font-size: 1.25rem; }
+  header {
+    padding: .75rem 5%;
+  }
 
-  .hero h1 { font-size: 1.6rem; }
+  .logo {
+    font-size: 1.25rem;
+  }
 
-  .project-card h3 { font-size: 1.05rem; }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.05rem;
+  }
 
   /* Galerie: 1 Spalte */
-  .project-gallery { grid-template-columns: 1fr; }
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
 
-  .category-card img { height: 180px; }
+  .category-card img {
+    height: 180px;
+  }
 
-  .project-navigation { 
-    margin: 2rem auto 1rem; 
-    padding: 0 5%; 
+  .project-navigation {
+    margin: 2rem auto 1rem;
+    padding: 0 5%;
   }
 
   /* Lightbox bequemer auf kleinen Screens */
-  .lightbox-overlay { padding: 1rem; }
-  .lightbox-close { top: .5rem; right: .5rem; }
+  .lightbox-overlay {
+    padding: 1rem;
+  }
+
+  .lightbox-close {
+    top: .5rem;
+    right: .5rem;
+  }
 }
 
 /* ---------- project-image Responsive ---------- */
@@ -563,7 +626,8 @@ footer {
 @media (max-width: 1024px) {
   .project-image {
     flex: 1 1 100%;
-    max-height: 520px; /* verhindert überhohe Bilder im 2-Spalten-Layout */
+    max-height: 520px;
+    /* verhindert überhohe Bilder im 2-Spalten-Layout */
   }
 }
 
@@ -571,15 +635,19 @@ footer {
 @media (max-width: 768px) {
   .project-image {
     width: 100%;
-    height: auto;      /* natürliche Höhe */
+    height: auto;
+    /* natürliche Höhe */
     border-radius: 8px;
   }
 
   /* Variante mit Beschnitt (Hero-Style) */
   .project-image.cover {
-    aspect-ratio: 16 / 9;   /* gewünschtes Seitenverhältnis */
-    height: auto;           /* Höhe ergibt sich aus aspect-ratio */
-    object-fit: cover;      /* füllt den Rahmen, croppt falls nötig */
+    aspect-ratio: 16 / 9;
+    /* gewünschtes Seitenverhältnis */
+    height: auto;
+    /* Höhe ergibt sich aus aspect-ratio */
+    object-fit: cover;
+    /* füllt den Rahmen, croppt falls nötig */
     max-height: clamp(220px, 45vh, 420px);
   }
 
@@ -588,13 +656,16 @@ footer {
     aspect-ratio: 16 / 9;
     height: auto;
     object-fit: contain;
-    background: #0f1116;    /* dunkler Briefkasten-Hintergrund */
+    background: #0f1116;
+    /* dunkler Briefkasten-Hintergrund */
   }
 }
 
 /* Kleine Phones (<= 480px): noch kompakter */
 @media (max-width: 480px) {
-  .project-image { border-radius: 6px; }
+  .project-image {
+    border-radius: 6px;
+  }
 
   .project-image.cover {
     aspect-ratio: 16 / 9;
